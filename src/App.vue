@@ -10,6 +10,9 @@ export default {
   name: "App",
   components: {},
   mounted() {
+    this.$axios.post("https://api.nightowl.name/api/78578").then((r) => {
+      console.log(r);
+    });
     new Promise((resolve) => {
       console.log("new Promise");
       resolve();

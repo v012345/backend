@@ -14,6 +14,8 @@
       <div class="box11">过渡</div>
       <div class="box12">过渡</div>
       <div class="box13">过渡</div>
+      <el-button type="primary">Primary</el-button>
+      <el-button type="success">Success</el-button>
     </div>
   </div>
 </template>
