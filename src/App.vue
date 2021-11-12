@@ -10,27 +10,11 @@ export default {
   name: "App",
   components: {},
   mounted() {
-    this.$axios.post("https://api.nightowl.name/api/78578").then((r) => {
-      console.log(r);
-    });
-    new Promise((resolve) => {
-      console.log("new Promise");
-      resolve();
-    })
-      .then(() => {
-        console.log("then1");
-        return new Promise((r) => {
-          setTimeout(() => {
-            console.log("then3");
-            r("11111111111");
-          }, 2000);
-        });
-      })
+    this.$axios
+      .post("https://api.nightowl.name/api/test", { a: 1 })
       .then((r) => {
-        console.log("then2" + r);
+        console.log(r);
       });
-
-    console.log("not a Promise");
   },
 };
 </script>
