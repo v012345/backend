@@ -8,6 +8,9 @@ Vue.config.productionTip = false
 Vue.prototype.$axios = axios;
 
 new Vue({
+  beforeCreate() {
+    Vue.prototype.$bus = this;
+  },
   render: h => h(App),
   router
 }).$mount('#app')
