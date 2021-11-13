@@ -1,5 +1,9 @@
 import Vue from "vue";
-import { Button } from "element-ui";
+import { Button, Table, TableColumn } from "element-ui";
 import 'element-ui/lib/theme-chalk/button.css';
-//这里我还不知道 Vue.use() 能不能传入多个组件
+import 'element-ui/lib/theme-chalk/table.css';
+import 'element-ui/lib/theme-chalk/button.css';
+
 Vue.use(Button);
+Vue.use(Table);
+Vue.use(TableColumn);
