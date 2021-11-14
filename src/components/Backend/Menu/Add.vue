@@ -32,7 +32,8 @@ export default {
   },
   methods: {
     submitForm() {
-      console.log(this.payload);
+      // console.log(this.payload);
+      // this.$bus.$emit("menu_add", this.payload);
     },
     resetForm() {
       this.payload = {

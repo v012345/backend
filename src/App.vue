@@ -3,11 +3,11 @@
     <router-link to="/home">home</router-link>
     <router-view></router-view>
     <Backend></Backend>
-    <el-table :data="tableData" stripe style="width: 100%">
+    <!-- <el-table :data="tableData" stripe style="width: 100%">
       <el-table-column prop="date" label="Date" width="180"> </el-table-column>
       <el-table-column prop="name" label="Name" width="180"> </el-table-column>
-      <el-table-column prop="address" label="Address"> </el-table-column>
-    </el-table>
+      <el-table-column prop="address" label="A ddress"> </el-table-column>
+    </el-table> -->
   </div>
 </template>
 
